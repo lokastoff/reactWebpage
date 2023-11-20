@@ -5,6 +5,7 @@ import { TabsAuth } from "./tabsAuth";
 import { motion } from "framer-motion";
 import { LoginPanel } from "./loginPanel";
 import { SignupPanel } from "./signupPanel";
+import { SignupModal } from "./signupModal";
 export const AuthComponent = () => {
     return(
         <section className='flex justify-center items-center text-center h-screen bg-headerImg bg-cover bg-center'>

@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { ValidationPoint } from "./validationBlock";
 import { useForm, Controller } from 'react-hook-form';
 import { useState } from "react";
-
+import axios from 'axios';
+import { SignupModal } from "./signupModal";
 const Cross = ()=>{
     return(
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,9 +23,15 @@ const Swoosh = () =>{
 
 export const SignupPanel = () => {
     const { handleSubmit, register, formState: { errors },reset } = useForm({mode:'onChange'}); 
-    const onSubmit = (data) => {
-        console.log(data);
-        reset();
+    const onSubmit = async (data) => {
+        try {
+          console.log(data);
+          const response = await axios.post('http://localhost:3000/register', data);
+          console.log(response.data);
+          reset();
+        } catch (error) {
+          console.error('Error during data submission:', error);
+        }
       };
       const [isSwoosh, setIsSwoosh] = useState(false);
     return(
