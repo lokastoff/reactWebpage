@@ -4,3 +4,7 @@
 
 -refactor js into ts
 
+-add layout
+
+-add media reqs
+
