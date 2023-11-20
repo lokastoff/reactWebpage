@@ -24,7 +24,6 @@ export const AuthComponent = () => {
                     </div>
                 </Tab.Group>
             </div>
-            <div className=""></div>
           </motion.div>
         </section>
     )

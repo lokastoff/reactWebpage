@@ -6,6 +6,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { useState } from "react";
 import axios from 'axios';
 import { SignupModal } from "./signupModal";
+import { SignupModalUnsuccess } from "./signupModalUnsuccess";
 const Cross = ()=>{
     return(
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,20 +23,34 @@ const Swoosh = () =>{
 }
 
 export const SignupPanel = () => {
+    const [isSuccessOpen, setIsSuccessOpen] = useState(false)
+    const [isUnsuccessOpen, setIsUnsuccessOpen] = useState(false)
     const { handleSubmit, register, formState: { errors },reset } = useForm({mode:'onChange'}); 
+    const [errorText, setErrorText] = useState('')
     const onSubmit = async (data) => {
         try {
           console.log(data);
           const response = await axios.post('http://localhost:3000/register', data);
           console.log(response.data);
+          if(response.status === 201){
+            setIsSuccessOpen(true)
+          }
           reset();
         } catch (error) {
+            if (error.response.status === 409){
+                setErrorText('Such email is alredy registered')
+                setIsUnsuccessOpen(true)
+              } else{
+                setErrorText('Server error. Try again later')
+                setIsUnsuccessOpen(true)
+              }
           console.error('Error during data submission:', error);
         }
       };
-      const [isSwoosh, setIsSwoosh] = useState(false);
     return(
         <Tab.Panel>
+            <SignupModal isOpen={isSuccessOpen} setIsOpen={setIsSuccessOpen} />
+            <SignupModalUnsuccess isOpen={isUnsuccessOpen} setIsOpen={setIsUnsuccessOpen} textBlock={errorText}/>
             <motion.form initial={{opacity:0}} animate={{opacity:1}} onSubmit={handleSubmit(onSubmit)}>
                 <div className="mb-[20px] flex flex-col"> 
                     <label className="text-white text-[14px] font-normal text-left mb-[10px]">Email</label>
