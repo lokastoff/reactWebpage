@@ -22,6 +22,8 @@ const Swoosh = () =>{
     )
 }
 
+
+
 export const SignupPanel = () => {
     const [isSuccessOpen, setIsSuccessOpen] = useState(false)
     const [isUnsuccessOpen, setIsUnsuccessOpen] = useState(false)

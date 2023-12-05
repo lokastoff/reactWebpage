@@ -10,9 +10,9 @@ export const HeaderNoAnim = () => {
                             <img className='max-w-full inline-block w-auto h-auto'src={navLogo} alt="App logo" />
                         </Link>
                         <div className='navLinkWrapper'>
-                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/Products">Products</Link>
-                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/Pricing">Pricing</Link>
-                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/Patchrelease">Patch release</Link>
+                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/products">Products</Link>
+                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/pricing">Pricing</Link>
+                            <Link className = 'inline-block p-5 mr-10 text-lg text-gray-100/40 duration-200 ease-in-out transition-colors hover:text-white' to="/patchrelease">Patch release</Link>
                         </div>  
                     </div>
                     <div className='buttonWrapper flex justify-end'>
