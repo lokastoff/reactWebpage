@@ -1,6 +1,15 @@
 import React from "react";
 import { Tab } from "@headlessui/react";
+import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../../store/isauth/isAuthSlice";
 export const Mypagetabs = () => {
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+    const user = useSelector((state) => state.auth.user);
+    const dispatch = useDispatch();
+    const handleLogout = () => {
+        dispatch(logout())
+    }
    return(
      <Tab.Group>
         <div className='flex flex-col w-[300px] pt-[50px] '>
@@ -22,7 +31,7 @@ export const Mypagetabs = () => {
        </div>
       <Tab.Panels className='w-[600px] border-2 border-white'>
         <Tab.Panel>Content 1</Tab.Panel>
-        <Tab.Panel>Content 2</Tab.Panel>
+        <Tab.Panel><Link to={'/auth'} onClick={handleLogout}>Logout</Link></Tab.Panel>
       </Tab.Panels>
     </Tab.Group>
    )

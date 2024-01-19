@@ -2,15 +2,25 @@ import React from "react";
 import { Tab } from '@headlessui/react'
 import { motion } from "framer-motion";
 import axios from "axios";
-import { useForm, Controller } from 'react-hook-form';
-import { SignupModal } from "./signupModal";
+import { useForm } from 'react-hook-form';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from "react";
+import { login } from "../../store/isauth/isAuthSlice";
 export const LoginPanel = () => {
     const { handleSubmit, register, formState: { errors }, reset } = useForm(); 
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+    const user = useSelector((state) => state.auth.user);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        console.log('Auth state changed:', isAuthenticated);
+        console.log('User state changed:', user);
+      }, [isAuthenticated]);
     const onSubmit = async (data) => {
         try{
             console.log(data);
             const response = await axios.post('http://localhost:3000/login', data);
             console.log(response.data);
+            dispatch(login({ username: data.email }));
             reset();
         }catch (error){
             console.error('Error during data submission:', error);
