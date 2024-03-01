@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 export const About = () =>{
     return (
-        <section className='sectionAbout mt-0 h-[1872px] bg-[#121313] max-sm:h-[2320px]'>
+        <section className='sectionAbout mt-0 h-[1872px] bg-[#121313] max-sm:h-[2320px] overflow-x-hidden'>
             <div className='pagePadding px-[2.5rem] max-sm:px-[1.5rem]'>
                 <div className='containerLarge mx-auto w-full max-w-[73.25rem]'>
                     <div className='paddingVertical px-0'>
