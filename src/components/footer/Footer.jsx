@@ -1,12 +1,12 @@
 import React from "react";
 export const Footer = () =>{
     return(
-        <div className="pagePadding px-[2.5rem]">
+        <div className="pagePadding px-[2.5rem] max-sm:px-[1.5rem]">
             <div className="containerLarge mx-auto w-full max-w-[73.25rem] ">
                 <div className="paddingVertical pt-[4rem] pb-[2rem]">
                     <div className="footerComponent ">
-                        <div className="footerGrid grid grid-cols-[2.5fr_1fr_1fr_1fr] gap-[4rem] items-stretch justify-items-stretch content-stretch justify-stretch">
-                            <div className="footerItem">
+                        <div className="footerGrid grid grid-cols-[2.5fr_1fr_1fr_1fr] max-sm:grid-cols-[1fr] gap-[4rem] items-stretch justify-items-stretch content-stretch justify-stretch">
+                            <div className="footerItem ">
                                 <div className="marginBottom mb-[1rem]">
                                     <img className='inline-block max-w-full' src="/src/assets/footerLogo.png" alt="" />
                                 </div>
@@ -14,7 +14,7 @@ export const Footer = () =>{
                                     <p className="max-w-[304px] font-bold text-[16px] text-[#1e1e203d]">A team messaging app for everyone to connect with their team.</p>
                                 </div>
                             </div>
-                            <div className="footerItem">
+                            <div className="footerItem ">
                                 <div className="marginBottom mb-[2rem]">
                                     <h4 className="my-[10px] font-bold text-[16px] text-[#1e1e20a3]">Product</h4>
                                 </div>
@@ -33,7 +33,7 @@ export const Footer = () =>{
                                     </a>
                                 </div>
                             </div>
-                            <div className="footerItem">
+                            <div className="footerItem ">
                             <div className="marginBottom mb-[2rem]">
                                     <h4 className="my-[10px] font-bold text-[16px] text-[#1e1e20a3]">Support</h4>
                                 </div>

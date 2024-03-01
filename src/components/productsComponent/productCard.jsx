@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { products } from '../../services/products'
-const ProductCard = (props) => {
+import Carousel from "nuka-carousel"
+
+export const ProductCard = (props) => {
     return(
     <motion.div  whileHover={{scale:1.05}} className='flex flex-col justify-between px-[1.6em] py-[1.5em] rounded-[0.5em] border-[0.1em] border-white bg-white'>
         <div className='flex flex-col items-start'>
@@ -27,3 +28,18 @@ export const ProductCardList = ({ data }) => {
       <ProductCard key={card.id} type={card.type} img={card.logo} text={card.text} />
     ));
   };
+export const ProductCardListMobile = ({data}) => {
+    return(
+            <Carousel slidesToShow={1} className=''cellSpacing={20} renderCenterLeftControls={() => (
+                <button className='hidden'>
+                </button>
+              )} renderCenterRightControls={() => (
+                <button className='hidden'>
+                </button>
+              )} >
+                {data.map((card) => (
+                    <ProductCard key={card.id} type={card.type} img={card.logo} text={card.text} />
+                    ))};
+            </Carousel>
+    )
+}

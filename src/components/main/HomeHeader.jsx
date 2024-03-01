@@ -2,18 +2,18 @@ import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 export const HomeHeader = () =>{
     return(
-        <section className='h-1200 bg-headerImg bg-cover bg-center'>
-          <div className='pagePadding px-10'>
+        <section className='h-1200 bg-headerImg bg-cover bg-center max-sm:h-[806px]'>
+          <div className='pagePadding px-10 max-sm:px-[1.5rem]'>
             <div className='containerLarge mx-auto w-full max-w-6xl'>
-                <div className='padding-vertical px-0 py-32'>
+                <div className='padding-vertical px-0 pt-[8rem] pb-[6rem] max-sm:pt-[4rem] max-sm:pb-[3rem]'>
                     <div className='homeHeaderComponent mt-[60px]'>
                         <div className='homeHeaderContent'>
                                 <div className='marginBottom mx-0 mt-0 mb-[2rem] '>
                                     <motion.div initial ={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition= {{duration:2, delay:0.6}}  className='animWrap overflow-hidden'>
-                                        <h1 className='my-0 font-bold text-8xl text-[#f4f4f4] text-center'>Connect with</h1>
+                                        <h1 className='my-0 font-bold text-8xl text-[#f4f4f4] text-center max-sm:text-[4rem]'>Connect with</h1>
                                     </motion.div>
                                     <motion.div initial ={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition= {{duration:2, delay:0.6}} className='animWrap overflow-hidden'>
-                                        <h1 className='my-0 font-bold text-8xl text-[#f4f4f4] text-center'>your team</h1>
+                                        <h1 className='my-0 font-bold text-8xl text-[#f4f4f4] text-center max-sm:text-[4rem]'>your team</h1>
                                     </motion.div>
                                 </div>
                                 <div className='marginBottom mx-0 mt-0 mb-[3rem]'>
@@ -36,7 +36,7 @@ export const HomeHeader = () =>{
                                 </motion.div>
                         </div>
                         <div className ='homeHeaderImg flex items-center justify-center relative'>
-                            <motion.img initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}}className='inline-block max-w-full absolute top-[16px] right-[-60px] left-auto bottom-auto' src="/src/assets/headerImageDrops.png" alt="" />
+                            <motion.img initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}}className='inline-block max-w-full absolute top-[16px] right-[-60px] left-auto bottom-auto max-sm:top-[78px] max-sm:right-[-20px] max-sm:w-[34px]' src="/src/assets/headerImageDrops.png" alt="" />
                             <div className='margin-top mt-[6rem]'>
                                 <motion.div initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}} className='animWrap overflow-hidden'>
                                     <img className = 'headerImage inline-block max-w-full' src="/src/assets/headerImage.png" alt="" />

@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 export const Cta = () => {
     return (
-        <section className="sectionCta mt-[-240px] static">
-            <div className="pagePadding px-[2.5rem]">
+        <section className="sectionCta mt-[-240px] max-sm:mt-[-166] static">
+            <div className="pagePadding px-[2.5rem] max-sm:px-[1rem]">
                 <div className="containerLarge mx-auto w-full max-w-[73.25rem] ">
                     <div className="paddingVertical px-0">
                         <motion.div initial={{opacity:0, scale:0.9}} whileInView={{opacity:1, scale:1}} transition={{duration:1}} className="ctaComponent block py-[40px] static bg-[url('/src/assets/CTAback.png')] rounded-[32px] bg-cover">
@@ -11,10 +11,10 @@ export const Cta = () => {
                                 <div  className="contentHeading">
                                     <div className="marginBottom mb-[2rem]">
                                         <div className="animWrap overflow-hidden">
-                                            <h2 className="font-extrabold text-[3.75rem] text-[#f4f4f4] text-center">Join thousands</h2>
+                                            <h2 className="font-extrabold text-[3.75rem] max-sm:text-[3rem] text-[#f4f4f4] text-center">Join thousands</h2>
                                         </div>
                                         <div className="animWrap overflow-hidden">
-                                            <h2 className="font-extrabold text-[3.75rem] text-[#f4f4f4] text-center">creative teams on Hush</h2>
+                                            <h2 className="font-extrabold text-[3.75rem] max-sm:text-[3rem] text-[#f4f4f4] text-center">creative teams on Hush</h2>
                                         </div>
                                     </div>
                                     <div className="marginBottom mb-[2rem]">
