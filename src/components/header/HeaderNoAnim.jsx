@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Dropdown, Space } from 'antd';
 export const HeaderNoAnim = () => {
-    const navLogo = '/src/assets/nav_logo.png'
+    const navLogo = '/assets/nav_logo.png'
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
     const user = useSelector((state) => state.auth.user);
     const items = [
