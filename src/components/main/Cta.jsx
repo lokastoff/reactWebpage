@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 export const Cta = () => {
     return (
         <section className="sectionCta mt-[-240px] max-sm:mt-[-166] static">
-            <div className="pagePadding px-[2.5rem] max-sm:px-[1rem]">
+            <div className="pagePadding px-[2.5rem] max-sm:px-[1.5rem]">
                 <div className="containerLarge mx-auto w-full max-w-[73.25rem] ">
                     <div className="paddingVertical px-0">
                         <motion.div initial={{opacity:0, scale:0.9}} whileInView={{opacity:1, scale:1}} transition={{duration:1}} className="ctaComponent block py-[40px] static bg-[url('/src/assets/CTAback.png')] rounded-[32px] bg-cover">
-                            <div className="ctaContent mx-auto max-w-[704px] items-center">
+                            <div className="ctaContent mx-auto max-w-[704px] items-center max-sm:px-[1.5rem]">
                                 <div  className="contentHeading">
                                     <div className="marginBottom mb-[2rem]">
                                         <div className="animWrap overflow-hidden">
