@@ -14,7 +14,7 @@ export const ProductComponent = () =>{
                 <ProductCardList data = {products}/>
             </motion.div>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:0.2}} className='sm:hidden w-full px-[1.5rem]'>
-            <ProductCardListMobile data = {products}/>
+                <ProductCardListMobile data = {products}/>
             </motion.div>
         </section>
     )

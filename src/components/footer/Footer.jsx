@@ -8,7 +8,7 @@ export const Footer = () =>{
                         <div className="footerGrid grid grid-cols-[2.5fr_1fr_1fr_1fr] max-sm:grid-cols-[1fr] gap-[4rem] items-stretch justify-items-stretch content-stretch justify-stretch">
                             <div className="footerItem ">
                                 <div className="marginBottom mb-[1rem]">
-                                    <img className='inline-block max-w-full' src="/src/assets/footerLogo.png" alt="" />
+                                    <img className='inline-block max-w-full' src="/assets/footerLogo.png" alt="" />
                                 </div>
                                 <div className="marginBottom m-0">
                                     <p className="max-w-[304px] font-bold text-[16px] text-[#1e1e203d]">A team messaging app for everyone to connect with their team.</p>

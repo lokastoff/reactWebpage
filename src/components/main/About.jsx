@@ -9,7 +9,7 @@ export const About = () =>{
                         <div className='aboutComponent'>
                             <div className='aboutGrid1 grid grid-rows-1 grid-cols-[1.75fr_1.25fr] max-sm:grid-cols-1 gap-y-[16px] max-sm:gap-y-[4rem] max-sm:gap-x-[4rem] gap-x-[16px] items-stretch justify-items-stretch content-stretch justify-stretch pt-[10rem] max-sm:pt-[4rem]'>
                                 <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1.5}} className='aboutItem1'>
-                                    <img className='inline-block w-auto max-w-full' src="src/assets/aboutImage3.png" alt="" />
+                                    <img className='inline-block w-auto max-w-full' src="/assets/aboutImage3.png" alt="" />
                                 </motion.div>
                                 <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{duration:1.5}} className='aboutItem1 items-center'>
                                     <div className='contentHeading'>
@@ -79,7 +79,7 @@ export const About = () =>{
                                     </div>
                                 </motion.div>
                                 <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{duration:1.5}} className='aboutItem2'>
-                                    <img className = 'inline-block w-auto max-w-full ' src="/src/assets/aboutImage2.png" alt="" />
+                                    <img className = 'inline-block w-auto max-w-full ' src="/assets/aboutImage2.png" alt="" />
                                 </motion.div>
                             </div>
                         </div>

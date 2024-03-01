@@ -26,8 +26,8 @@ export const HomeHeader = () =>{
                                 <motion.div initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:2, delay:0.6}} className='marginBottom m-0'>
                                     <motion.div transition = {{duration:0.2}} whileHover = {{scale:1.2,transition:{duration:0.2}}} className='hoverAnim'>
                                         <a href="" className='gradientButton flex flex-row text-center items-center justify-center mx-auto px-[26px] py-[20px] w-[272px] h-[62px] relative border-[1px] rounded-[40px] border-gray-100/16 bg-gradient-to-r from-[#4c85fa] to-[#236bfe]'>
-                                            <img className = 'inline-block max-w-full absolute left-[-18px] top-[-18px] right-auto bottom-auto' src="/src/assets/dropsDownload.png" alt="" />
-                                            <img className = 'appleLogo maw-w-full inline-block static mr-[10px]' src="/src/assets/appleLogo.png" alt="" />
+                                            <img className = 'inline-block max-w-full absolute left-[-18px] top-[-18px] right-auto bottom-auto' src="/assets/dropsDownload.png" alt="" />
+                                            <img className = 'appleLogo maw-w-full inline-block static mr-[10px]' src="/assets/appleLogo.png" alt="" />
                                             <p className='font-medium text-base text-[#f4f4f4]'>Download for MacOs</p>
                                             <div className='shadow-[0_0_140px_1px] shadow-[#387aff] mt-0 w-[272px] h-[62px] absolute rounded-[40px]'>
                                             </div>
@@ -36,10 +36,10 @@ export const HomeHeader = () =>{
                                 </motion.div>
                         </div>
                         <div className ='homeHeaderImg flex items-center justify-center relative'>
-                            <motion.img initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}}className='inline-block max-w-full absolute top-[16px] right-[-60px] left-auto bottom-auto max-sm:top-[78px] max-sm:right-[-20px] max-sm:w-[34px]' src="/src/assets/headerImageDrops.png" alt="" />
+                            <motion.img initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}}className='inline-block max-w-full absolute top-[16px] right-[-60px] left-auto bottom-auto max-sm:top-[78px] max-sm:right-[-20px] max-sm:w-[34px]' src="/assets/headerImageDrops.png" alt="" />
                             <div className='margin-top mt-[6rem]'>
                                 <motion.div initial ={{opacity:0}} animate={{opacity:1}} transition= {{duration:1, delay:0.6}} className='animWrap overflow-hidden'>
-                                    <img className = 'headerImage inline-block max-w-full' src="/src/assets/headerImage.png" alt="" />
+                                    <img className = 'headerImage inline-block max-w-full' src="/assets/headerImage.png" alt="" />
                                 </motion.div>
                             </div>
                         </div>

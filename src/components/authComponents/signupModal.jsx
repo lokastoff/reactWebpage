@@ -30,7 +30,7 @@ export const SignupModal = ({isOpen, setIsOpen}) =>{
                     >
                         <Dialog.Panel className="fixed inset-0 flex flex-col border-white border-2  items-center justify-center my-[15%] mx-[35%] bg-white text-black rounded-[30px]">
                             <div>
-                                <img className="w-[150px] h-[150px] mt-[-210px]" src="/src/assets/green_check.png" alt="" />
+                                <img className="w-[150px] h-[150px] mt-[-210px]" src="/assets/green_check.png" alt="" />
                             </div>
                             <div className="flex flex-col items-center justify-center">
                                 <div className="">

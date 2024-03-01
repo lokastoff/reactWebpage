@@ -24,7 +24,7 @@ export const Features =()=>{
                                 <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1.5}} className='featuresItem grid-flow-row'>
                                     <div className='marginBottom mb-[1rem]'>
                                         <div className='animWrap overflow-hidden'>
-                                            <img src="/src/assets/communication.png" alt="" />
+                                            <img src="/assets/communication.png" alt="" />
                                         </div>
                                     </div>
                                     <div className='marginBottom mb-[1rem]'>
@@ -41,7 +41,7 @@ export const Features =()=>{
                                 <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} className='featuresItem'>
                                     <div className='marginBottom mb-[1rem]'>
                                         <div className='animWrap overflow-hidden'>
-                                            <img src="/src/assets/support.png" alt="" />
+                                            <img src="/assets/support.png" alt="" />
                                         </div>
                                     </div>
                                     <div className='marginBottom mb-[1rem]'>
@@ -58,7 +58,7 @@ export const Features =()=>{
                                 <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{duration:1.5}} className='featuresItem'>
                                     <div className='marginBottom mb-[1rem]'>
                                         <div className='animWrap overflow-hidden'>
-                                            <img src="/src/assets/channel.png" alt="" />
+                                            <img src="/assets/channel.png" alt="" />
                                         </div>
                                     </div>
                                     <div className='marginBottom mb-[1rem]'>

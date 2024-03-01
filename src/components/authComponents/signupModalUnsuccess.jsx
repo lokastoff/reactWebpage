@@ -33,7 +33,7 @@ export const SignupModalUnsuccess = ({isOpen, setIsOpen, textBlock}) =>{
                         
                         <Dialog.Panel className="fixed inset-0 flex flex-col border-white border-2  items-center justify-center my-[15%] mx-[35%] bg-white text-black rounded-[30px]">
                             <div>
-                                <img className="w-[150px] h-[150px] mt-[-210px] bg-white rounded-[100px]" src="/src/assets/red_cross.png" alt="" />
+                                <img className="w-[150px] h-[150px] mt-[-210px] bg-white rounded-[100px]" src="/assets/red_cross.png" alt="" />
                             </div>
                             <div className="flex flex-col items-center justify-center">
                                 <div className="text-center">
